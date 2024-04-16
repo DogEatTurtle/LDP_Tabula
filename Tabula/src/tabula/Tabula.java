@@ -45,8 +45,7 @@ public class Tabula extends Application {
      */
     public static void main(String[] args) {
         launch(args);
-        //Batata Bruno
-        //Batata Duarte
+        
     }
     
 }
