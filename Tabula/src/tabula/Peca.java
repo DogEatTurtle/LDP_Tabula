@@ -10,4 +10,9 @@ package tabula;
  */
 public class Peca {
     
+    public int id;
+    
+    public Peca(int id){
+        this.id = id;
+    }
 }
