@@ -178,36 +178,36 @@
                   <Font name="System Bold" size="69.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="25.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="100.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="175.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="250.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="325.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="400.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="475.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="550.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="625.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="700.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="775.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="850.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="25.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="100.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="175.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="250.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="325.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="400.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="475.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="550.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="625.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="700.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="775.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="850.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos1" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="25.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos2" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="100.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos3" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="175.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos4" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="250.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos5" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="325.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos6" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="400.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos7" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="475.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos8" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="550.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos9" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="625.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos10" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="700.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos11" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="775.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos12" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="850.0" layoutY="450.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos24" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="25.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos23" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="100.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos22" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="175.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos21" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="250.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos20" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="325.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos19" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="400.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos18" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="475.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos17" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="550.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos16" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="625.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos15" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="700.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos14" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="775.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
+            <Rectangle fx:id="pos13" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="850.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
             <Text layoutX="20.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peças Jogador 1">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-            <StackPane layoutX="20.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p1" layoutX="20.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER">
@@ -217,7 +217,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="60.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p2" layoutX="60.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER">
@@ -227,7 +227,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="100.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p3" layoutX="100.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER">
@@ -237,7 +237,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="140.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p4" layoutX="140.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER">
@@ -247,7 +247,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="180.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p5" layoutX="180.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER">
@@ -257,7 +257,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="220.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p6" layoutX="220.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER">
@@ -267,7 +267,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="260.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p7" layoutX="260.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" textAlignment="CENTER">
@@ -277,7 +277,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="300.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p8" layoutX="300.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER">
@@ -287,7 +287,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="340.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p9" layoutX="340.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9" textAlignment="CENTER">
@@ -297,7 +297,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="379.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p10" layoutX="379.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER">
@@ -307,7 +307,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="420.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p11" layoutX="420.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11" textAlignment="CENTER">
@@ -317,7 +317,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="460.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p12" layoutX="460.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER">
@@ -327,7 +327,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="500.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p13" layoutX="500.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13" textAlignment="CENTER">
@@ -337,7 +337,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="540.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p14" layoutX="540.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14" textAlignment="CENTER">
@@ -347,7 +347,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="580.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p15" layoutX="580.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER">
@@ -362,7 +362,7 @@
                   <Font size="22.0" />
                </font>
             </Text>
-            <StackPane layoutX="670.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p16" layoutX="670.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="16" textAlignment="CENTER">
@@ -372,7 +372,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="710.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p17" layoutX="710.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="17" textAlignment="CENTER">
@@ -382,7 +382,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="750.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p18" layoutX="750.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="18" textAlignment="CENTER">
@@ -392,7 +392,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="790.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p19" layoutX="790.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="19" textAlignment="CENTER">
@@ -402,7 +402,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="830.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p20" layoutX="830.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="20" textAlignment="CENTER">
@@ -412,7 +412,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="870.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p21" layoutX="870.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="21" textAlignment="CENTER">
@@ -422,7 +422,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="910.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p22" layoutX="910.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="22" textAlignment="CENTER">
@@ -432,7 +432,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="950.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p23" layoutX="950.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="23" textAlignment="CENTER">
@@ -442,7 +442,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="990.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p24" layoutX="990.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="24" textAlignment="CENTER">
@@ -452,7 +452,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1030.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p25" layoutX="1030.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="25" textAlignment="CENTER">
@@ -462,7 +462,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1070.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p26" layoutX="1070.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="26" textAlignment="CENTER">
@@ -472,7 +472,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1110.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p27" layoutX="1110.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="27" textAlignment="CENTER">
@@ -482,7 +482,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1150.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p28" layoutX="1150.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="28" textAlignment="CENTER">
@@ -492,7 +492,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1190.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p29" layoutX="1190.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="29" textAlignment="CENTER">
@@ -502,7 +502,7 @@
                   </Text>
                </children>
             </StackPane>
-            <StackPane layoutX="1230.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
+            <StackPane fx:id="p30" layoutX="1230.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER">
@@ -527,37 +527,37 @@
             <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#764500" height="90.0" layoutX="950.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="90.0" />
             <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#764500" height="90.0" layoutX="1060.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="90.0" />
             <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#764500" height="90.0" layoutX="1170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="90.0" />
-            <Text fill="WHITE" layoutX="982.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="text1" fill="WHITE" layoutX="982.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font size="50.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="1092.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="text2" fill="WHITE" layoutX="1092.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font size="50.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="1202.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Text fx:id="text3" fill="WHITE" layoutX="1202.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font size="50.0" />
                </font>
             </Text>
-            <TextArea layoutX="950.0" layoutY="250.0" prefHeight="35.0" prefWidth="315.0" promptText="Escolher peça nº" wrapText="true">
+            <TextArea fx:id="pecaid" layoutX="950.0" layoutY="250.0" prefHeight="35.0" prefWidth="315.0" promptText="Escolher peça nº" wrapText="true">
                <font>
                   <Font size="22.0" />
                </font>
             </TextArea>
-            <TextArea layoutX="950.0" layoutY="330.0" prefHeight="35.0" prefWidth="315.0" promptText="Casas a andar" wrapText="true">
+            <TextArea fx:id="posicaoid" layoutX="950.0" layoutY="330.0" prefHeight="35.0" prefWidth="315.0" promptText="Casas a andar" wrapText="true">
                <font>
                   <Font size="22.0" />
                </font>
             </TextArea>
-            <Button layoutX="1065.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Jogar" textAlignment="CENTER">
+            <Button fx:id="jogar" layoutX="1065.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Jogar" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
             </Button>
-            <Button layoutX="1010.0" layoutY="490.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Terminar Jogada" textAlignment="CENTER">
+            <Button fx:id="jogada" layoutX="1010.0" layoutY="490.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Terminar Jogada" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
@@ -567,14 +567,14 @@
                   <Font name="System Bold" size="22.0" />
                </font>
             </Button>
-            <Button layoutX="1010.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Lançar os Dados" textAlignment="CENTER">
+            <Button fx:id="lancardados" layoutX="1010.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: #b78e35;" text="Lançar os Dados" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
             </Button>
          </children>
       </Pane>
-      <Label alignment="CENTER" layoutX="360.0" layoutY="30.0" prefHeight="47.0" prefWidth="429.0" text="Espere pela sua vez de jogar">
+      <Label fx:id="labelVez" alignment="CENTER" layoutX="360.0" layoutY="30.0" prefHeight="47.0" prefWidth="429.0" text="Espere pela sua vez de jogar">
          <font>
             <Font name="System Bold" size="32.0" />
          </font>
@@ -587,41 +587,41 @@
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Regras" />
+          <Menu mnemonicParsing="false" onAction="#abrirRegras" text="Regras" />
           <Menu mnemonicParsing="false" text="Opções">
             <items>
-              <MenuItem mnemonicParsing="false" text="Sair" />
+              <MenuItem mnemonicParsing="false" onAction="#sairJogo" text="Sair" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eccc86" height="652.0" layoutX="89.4" layoutY="166.4" stroke="#b78e35" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="1088.0" AnchorPane.bottomAnchor="82.60000000000002" AnchorPane.leftAnchor="89.4" AnchorPane.rightAnchor="241.0" AnchorPane.topAnchor="166.4" />
-      <Text layoutX="108.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Lança-se os 3 dados e o número que sair é as casas que o jogador pode avançar, podendo este decidir mover apenas uma peça ou repartir os pontos por duas ou três peças. O jogador apenas não pode mover uma única peça mais do que 12 casas seguidas." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
+      <Rectangle fx:id="regras" arcHeight="5.0" arcWidth="5.0" fill="#eccc86" height="652.0" layoutX="89.4" layoutY="166.4" stroke="#b78e35" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="1088.0" AnchorPane.bottomAnchor="82.60000000000002" AnchorPane.leftAnchor="89.4" AnchorPane.rightAnchor="241.0" AnchorPane.topAnchor="166.4" />
+      <Text fx:id="regra1" layoutX="108.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Lança-se os 3 dados e o número que sair é as casas que o jogador pode avançar, podendo este decidir mover apenas uma peça ou repartir os pontos por duas ou três peças. O jogador apenas não pode mover uma única peça mais do que 12 casas seguidas." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
          <font>
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text layoutX="108.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Em qualquer casa do tabuleiro é possível estarem várias peças do mesmo jogador." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
+      <Text fx:id="regra2" layoutX="108.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Em qualquer casa do tabuleiro é possível estarem várias peças do mesmo jogador." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
          <font>
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text layoutX="108.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Se um jogador colocar uma peça numa casa onde exista uma única peça adversária, esta última é retirada do tabuleiro e deve reentrar na jogada seguinte do adversário." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
+      <Text fx:id="regra3" layoutX="108.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Se um jogador colocar uma peça numa casa onde exista uma única peça adversária, esta última é retirada do tabuleiro e deve reentrar na jogada seguinte do adversário." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
          <font>
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text layoutX="108.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Um jogador não pode atacar nem ocupar um ponto onde estejam duas ou mais peças adversárias." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
+      <Text fx:id="regra4" layoutX="108.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Um jogador não pode atacar nem ocupar um ponto onde estejam duas ou mais peças adversárias." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
          <font>
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text layoutX="108.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Nenhum jogador pode ocupar a segunda metade do tabuleiro enquanto nãotiver todas as suas peças no tabuleiro." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
+      <Text fx:id="regra5" layoutX="108.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Nenhum jogador pode ocupar a segunda metade do tabuleiro enquanto nãotiver todas as suas peças no tabuleiro." textAlignment="JUSTIFY" visible="false" wrappingWidth="1042.13671875">
          <font>
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text layoutX="1137.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="JUSTIFY" visible="false" wrappingWidth="26.953125">
+      <Text fx:id="fechar" layoutX="1137.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="JUSTIFY" visible="false" wrappingWidth="26.953125">
          <font>
             <Font name="Arial" size="38.0" />
          </font>
