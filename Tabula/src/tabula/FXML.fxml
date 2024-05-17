@@ -202,11 +202,11 @@
             <Rectangle fx:id="pos15" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="700.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
             <Rectangle fx:id="pos14" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="775.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
             <Rectangle fx:id="pos13" arcHeight="5.0" arcWidth="5.0" fill="#ecd299" height="250.0" layoutX="850.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="65.0" />
-            <Text layoutX="20.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peças Jogador 1">
+            <Label fx:id="indicativoPecas1" layoutX="20.0" layoutY="730.0" text="Peças Jogador 1">
                <font>
                   <Font size="22.0" />
                </font>
-            </Text>
+            </Label>
             <StackPane fx:id="p1" layoutX="20.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d4b58c" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
@@ -357,11 +357,11 @@
                   </Text>
                </children>
             </StackPane>
-            <Text layoutX="670.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peças Jogador 2">
+            <Label fx:id="indicativoPecas2" layoutX="670.0" layoutY="730.0" text="Peças Jogador 2">
                <font>
                   <Font size="22.0" />
                </font>
-            </Text>
+            </Label>
             <StackPane fx:id="p16" layoutX="670.0" layoutY="770.0" prefHeight="30.0" prefWidth="30.0">
                <children>
                   <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5b3718" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
@@ -582,11 +582,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="900.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="1280.0" />
       <MenuBar prefHeight="26.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
-          <Menu mnemonicParsing="false" text="TABULA">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
+          <Menu mnemonicParsing="false" text="TABULA" />
           <Menu mnemonicParsing="false" onAction="#abrirRegras" text="Regras" />
           <Menu mnemonicParsing="false" text="Opções">
             <items>
@@ -621,21 +617,21 @@
             <Font name="Times New Roman" size="39.0" />
          </font>
       </Text>
-      <Text fx:id="fechar" layoutX="1137.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="JUSTIFY" visible="false" wrappingWidth="26.953125">
+      <Label fx:id="fechar" layoutX="1140.0" layoutY="170.0" text="X" visible="false">
          <font>
-            <Font name="Arial" size="38.0" />
+            <Font name="System Bold" size="32.0" />
          </font>
-      </Text>
+      </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eccc86" height="200.0" layoutX="1.0" layoutY="356.0" stroke="#b78e35" strokeType="INSIDE" strokeWidth="5.0" visible="false" width="1280.0" />
-      <Text layoutX="233.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ganhaste" visible="false">
+      <Label fx:id="player1Label" layoutX="401.0" layoutY="368.0" text="Ganhaste!" visible="false">
          <font>
-            <Font name="System Bold" size="200.0" />
+            <Font name="System Bold" size="120.0" />
          </font>
-      </Text>
-      <Text layoutX="264.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perdeste" visible="false">
+      </Label>
+      <Label fx:id="player2Label" layoutX="401.0" layoutY="366.0" text="Perdeste :(" visible="false">
          <font>
-            <Font name="System Bold" size="200.0" />
+            <Font name="System Bold" size="120.0" />
          </font>
-      </Text>
+      </Label>
    </children>
 </AnchorPane>

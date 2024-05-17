@@ -15,4 +15,8 @@ public class Peca {
     public Peca(int id){
         this.id = id;
     }
+    
+    public Peca(){
+        
+    }
 }
