@@ -288,6 +288,10 @@ public class FXMLController implements Initializable {
     @FXML
     private StackPane p30;
     public static StackPane p30Estatico;
+    
+    @FXML
+    private Rectangle atacadas;
+    public static Rectangle atacadasEstatico;
 
     @FXML
     private Label player1Label;
@@ -359,9 +363,7 @@ public class FXMLController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         fecharEstatico = fechar;
-
-        // Set the initial visibility of fecharEstatico to false
-        fecharEstatico.setVisible(false);
+       
         text1Estatico = text1;
         text2Estatico = text2;
         text3Estatico = text3;
@@ -426,6 +428,7 @@ public class FXMLController implements Initializable {
         p28Estatico = p28;
         p29Estatico = p29;
         p30Estatico = p30;
+        atacadasEstatico = atacadas;
         indicativoPecas1Estatico = indicativoPecas1;
         indicativoPecas2Estatico = indicativoPecas2;
         player1LabelEstatico = player1Label;
@@ -439,13 +442,13 @@ public class FXMLController implements Initializable {
         regra5Estatico = regra5;
         regrasEstatico = regras;
         fecharEstatico = fechar;
-        regra1Estatico.setVisible(false);
-        regra2Estatico.setVisible(false);
-        regra3Estatico.setVisible(false);
-        regra4Estatico.setVisible(false);
-        regra5Estatico.setVisible(false);
-        regrasEstatico.setVisible(false);
+        regra1Estatico.setVisible(true);
+        regra2Estatico.setVisible(true);
+        regra3Estatico.setVisible(true);
+        regra4Estatico.setVisible(true);
+        regra5Estatico.setVisible(true);
+        regrasEstatico.setVisible(true);
+        fecharEstatico.setVisible(true);
 
-    }    
-    
+    }       
 }

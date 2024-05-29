@@ -34,14 +34,6 @@ import javax.swing.JTextArea;
 
 public class Jogador extends Application{
     
-    private int width;
-    private int height;
-    private Container contentPane;
-    private JTextArea message;
-    private JButton b1;
-    private JButton b2;
-    private JButton b3;
-    private JButton b4;
     private ClientSideConnection csc;
     private int playerID;
     private int otherPlayer;
@@ -67,7 +59,7 @@ public class Jogador extends Application{
 
     public void connectToServer() {
         csc = new ClientSideConnection();
-        System.out.println("cabelo");
+        System.out.println("conecta");
     }
 
     //Client Connection Inner Class
@@ -94,28 +86,10 @@ public class Jogador extends Application{
 
     }
 
-    public void setUpGUI() {
-//        this.setSize(width, height);
-//        this.setTitle("Player # "+playerID +" Tábula");
-//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        contentPane.setLayout(new GridLayout(1, 5));
-        contentPane.add(message);
-        message.setText("Creating a Tábula Game");
-        message.setWrapStyleWord(true);
-        message.setLineWrap(true);
-        message.setEditable(false);
-        contentPane.add(b1);
-        contentPane.add(b2);
-        contentPane.add(b3);
-        contentPane.add(b4);
-
-//        this.setVisible(true);
-    }
-
     public static void main(String[] args) {
         try {
             launch(args);
-            System.out.println("Adeus..");
+            System.out.println("Adeus");
             out.writeUTF("#logout");
             System.exit(0);
         } catch (IOException ex) {
@@ -148,12 +122,12 @@ public class Jogador extends Application{
         String[] parts = nomeJogadorserver.split("\\s+");
         String numberString = parts[1];
 
-// Convert the number string to an int
+        // Convert the number string to an int
         int id = Integer.parseInt(numberString);
         System.out.println(id);
 
         jogoInstancia.pecasIndicativo(id);
-// Print the number
+        // Print the number
         System.out.println("Number: " + id);
         comecar = true;
         // Thread que serve para o cliente envia mensagens para o servidor
@@ -182,8 +156,6 @@ public class Jogador extends Application{
                     } catch (IOException ex) {
                         System.out.println("IOException from click button");
                     }
-
-                    //FXMLController.txtDadosEstatico.setText("Nabo");
                 }
             });
 
@@ -193,7 +165,7 @@ public class Jogador extends Application{
 
                     try {
 
-                        out.writeUTF("#vez"); //FXMLController.txtDadosEstatico.setText("Nabo");
+                        out.writeUTF("#vez"); 
                         System.out.println("qwedfrtyukil");
                     } catch (IOException ex) {
                         Logger.getLogger(Jogador.class.getName()).log(Level.SEVERE, null, ex);
@@ -357,28 +329,40 @@ public class Jogador extends Application{
                         if (mover <= 12) {
 
                             //verificar se pode mover a casa
+                                //Dado 1
                             if (mover == Integer.parseInt(FXMLController.text1Estatico.getText())) {
                                 FXMLController.text1Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
 
+                                //Dado 2
                             } else if (mover == Integer.parseInt(FXMLController.text2Estatico.getText())) {
                                 FXMLController.text2Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
+                                
+                                //Dado 3
                             } else if (mover == Integer.parseInt(FXMLController.text3Estatico.getText())) {
                                 FXMLController.text3Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
+                                
+                                //Soma do dado 1 com o dado 2
                             } else if (mover == (Integer.parseInt(FXMLController.text1Estatico.getText()) + Integer.parseInt(FXMLController.text2Estatico.getText()))) {
                                 FXMLController.text1Estatico.setText("0");
                                 FXMLController.text2Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
+                                
+                                //Soma do dado 1 com o dado 3
                             } else if (mover == (Integer.parseInt(FXMLController.text1Estatico.getText()) + Integer.parseInt(FXMLController.text3Estatico.getText()))) {
                                 FXMLController.text1Estatico.setText("0");
                                 FXMLController.text3Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
+                                
+                                //Soma do dado 2 com o dado 3
                             } else if (mover == (Integer.parseInt(FXMLController.text2Estatico.getText()) + Integer.parseInt(FXMLController.text3Estatico.getText()))) {
                                 FXMLController.text2Estatico.setText("0");
                                 FXMLController.text3Estatico.setText("0");
                                 jogoInstancia.retiraPeca(peca);
+                                
+                                //Soma dos 3 dados
                             } else if (mover == (Integer.parseInt(FXMLController.text1Estatico.getText()) + Integer.parseInt(FXMLController.text2Estatico.getText()) + Integer.parseInt(FXMLController.text3Estatico.getText()))) {
                                 FXMLController.text1Estatico.setText("0");
                                 FXMLController.text2Estatico.setText("0");
@@ -387,6 +371,8 @@ public class Jogador extends Application{
                             }
 
                         }
+                        
+                        // Quem ganhou / Fim de jogo / Desativar tudo
                     } else if (msg.startsWith("#ganhou")) {
                         String[] msgSplit = msg.split("-");
                         int playerWinner = Integer.parseInt(msgSplit[1]);
