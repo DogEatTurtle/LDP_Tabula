@@ -4,6 +4,7 @@
  */
 package tabula;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -15,8 +16,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.Media;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.scene.media.MediaPlayer;
 
 /**
  * FXML Controller class
@@ -449,6 +452,10 @@ public class FXMLController implements Initializable {
         regra5Estatico.setVisible(true);
         regrasEstatico.setVisible(true);
         fecharEstatico.setVisible(true);
-
-    }       
+        
+        Media bg = new Media(getClass().getResource("background.mp3").toExternalForm());
+        MediaPlayer bgAudio = new MediaPlayer(bg);
+        bgAudio.setOnEndOfMedia(() -> bgAudio.seek(javafx.util.Duration.ZERO));
+        bgAudio.play();
+    }
 }

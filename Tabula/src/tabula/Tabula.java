@@ -4,6 +4,7 @@
  */
 package tabula;
 
+import java.io.File;
 import java.io.ObjectOutputStream;
 import java.util.Random;
 import javafx.application.Application;
@@ -15,6 +16,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 /**
@@ -46,6 +49,10 @@ public class Tabula extends Application {
     }
 
     public void displayDados(int d1, int d2, int d3) {
+        
+        Media dados = new Media(getClass().getResource("dados.mp3").toExternalForm());
+        MediaPlayer dadosAudio = new MediaPlayer(dados);
+        dadosAudio.play();
 
         FXMLController.text1Estatico.setText("" + d1);
         FXMLController.text2Estatico.setText("" + d2);
@@ -54,11 +61,15 @@ public class Tabula extends Application {
     }
 
     public void movePeca(String peca, int posicao, int atacada) {
-
+        
         double targetX = 0;
         double targetY = 0;
         //double offsetX = 0;
         //double offsetY = 0;
+        
+        Media peça = new Media(getClass().getResource("Peca.mp3").toExternalForm());
+        MediaPlayer pecaAudio = new MediaPlayer(peça);
+        pecaAudio.play();
 
         switch (posicao) {
             case 1:
@@ -1249,7 +1260,11 @@ public class Tabula extends Application {
     public void mudaVez() {
         this.minhavez = !this.minhavez;
         lancouDados = false;
-
+        
+        Media mudar = new Media(getClass().getResource("mudar.mp3").toExternalForm());
+        MediaPlayer mudarAudio = new MediaPlayer(mudar);
+        mudarAudio.play();
+        
         Platform.runLater(() -> {
             if (!this.minhavez) {
                 FXMLController.jogadaEstatico.setDisable(true);
