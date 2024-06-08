@@ -21,10 +21,6 @@ import java.util.logging.Logger;
 public class GameServer {
 
     private ServerSocket ss;
-    private int numPlayers;
-    private int turnsMade;
-    private int maxTurns;
-    private int[] values;
 
     private static int port = 6666, nClientes = 1;
     // lista de jogadores disponíveis
@@ -269,32 +265,6 @@ public class GameServer {
                 pecas.add(peca30);
                 System.out.println("PECAS criadas player 2: " + pecas.get(0));
             }
-        }
-
-        // verifica se os jogadores estão prontos para jogar
-        private boolean verificaJogadoresProntos() {
-            boolean result = true;
-            if (GameServer.njogadores < 2) {
-                result = false;
-            } else {
-                for (ClientHandler c : GameServer.listaClientes) {
-                    if (!c.prontoJogar) { //verifica se o c.prontoJogar é false
-                        result = false;
-                    }
-                }
-            }
-            return result;
-        }
-
-        // devolve o nome do outro jogador
-        private String getNomeOutroJogador(String codeJogador) {
-            String result = "";
-            for (ClientHandler c : GameServer.listaClientes) {
-                if (!c.code.equals(codeJogador)) {
-                    result = c.nome;
-                }
-            }
-            return result;
         }
 
         public boolean geraVez() {
@@ -693,7 +663,6 @@ public class GameServer {
                                                                     pecaAtacadaIndex = i;
                                                                     count++;
                                                                 }
-
                                                             }
                                                         }
 
@@ -736,15 +705,12 @@ public class GameServer {
                                                             pecaAtacadaMovida = true;
                                                             pecaMovida = true;
                                                         }
-
                                                     }
-
                                                 }
                                             }
                                             if (pecaAtacadaMovida) {
                                                 client.pecasAtacadas.remove(pecaAtacadaParaMover);
                                             }
-
                                         }
                                     }
                                     if (pecaMovida) {
@@ -761,11 +727,8 @@ public class GameServer {
                                         }else{
                                              enviar = "#ganhou" +'-' + 1 + '-' + 0;
                                         }
-                                   
-                                    //jogoInstancia.ganhou(client.id);
+                                    }
                                 }
-
-                            }
                             for (ClientHandler client : GameServer.listaClientes) {
                                 client.dos.writeUTF(enviar);
                             }
@@ -777,7 +740,6 @@ public class GameServer {
                 }
             });
             cliente.start();
-
         }
     }
 }

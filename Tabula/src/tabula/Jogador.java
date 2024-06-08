@@ -96,14 +96,6 @@ public class Jogador extends Application{
         }
     }
 
-    //metodo para quando acabar o jogo
-    private void jogoTerminado(String text) throws IOException {
-        Platform.runLater(() -> {
-            //FXMLController.escondeAnchorEstatico.setVisible(false);
-            //FXMLController.labelVencedorEstatico.setText(text);
-            //FXMLController.anchorVencedorEstatico.setVisible(true);
-        });
-    }
 
     private void connectClient() throws IOException {
 
@@ -262,7 +254,6 @@ public class Jogador extends Application{
                                 if (mover == Integer.parseInt(FXMLController.text1Estatico.getText())) {
                                     FXMLController.text1Estatico.setText("0");
                                     jogoInstancia.movePeca(peca, posicao, atacada);
-
                                 } else if (mover == Integer.parseInt(FXMLController.text2Estatico.getText())) {
                                     FXMLController.text2Estatico.setText("0");
                                     jogoInstancia.movePeca(peca, posicao, atacada);
@@ -287,7 +278,6 @@ public class Jogador extends Application{
                                     FXMLController.text3Estatico.setText("0");
                                     jogoInstancia.movePeca(peca, posicao, atacada);
                                 }
-
                             }
                         } else {
                             if (podeMover2Etapa) {
