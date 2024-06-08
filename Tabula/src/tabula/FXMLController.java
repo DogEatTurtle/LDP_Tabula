@@ -453,9 +453,54 @@ public class FXMLController implements Initializable {
         regrasEstatico.setVisible(true);
         fecharEstatico.setVisible(true);
         
-        Media bg = new Media(getClass().getResource("background.mp3").toExternalForm());
+        /*Media bg = new Media(getClass().getResource("background.mp3").toExternalForm());
         MediaPlayer bgAudio = new MediaPlayer(bg);
         bgAudio.setOnEndOfMedia(() -> bgAudio.seek(javafx.util.Duration.ZERO));
-        bgAudio.play();
+        bgAudio.play();*/
+        
+        addPieceClickHandlers();
+    }
+    
+    private void addPieceClickHandlers() {
+        addClickHandler(p1, "1");
+        addClickHandler(p2, "2");
+        addClickHandler(p3, "3");
+        addClickHandler(p4, "4");
+        addClickHandler(p5, "5");
+        addClickHandler(p6, "6");
+        addClickHandler(p7, "7");
+        addClickHandler(p8, "8");
+        addClickHandler(p9, "9");
+        addClickHandler(p10, "10");
+        addClickHandler(p11, "11");
+        addClickHandler(p12, "12");
+        addClickHandler(p13, "13");
+        addClickHandler(p14, "14");
+        addClickHandler(p15, "15");
+        addClickHandler(p16, "16");
+        addClickHandler(p17, "17");
+        addClickHandler(p18, "18");
+        addClickHandler(p19, "19");
+        addClickHandler(p20, "20");
+        addClickHandler(p21, "21");
+        addClickHandler(p22, "22");
+        addClickHandler(p23, "23");
+        addClickHandler(p24, "24");
+        addClickHandler(p25, "25");
+        addClickHandler(p26, "26");
+        addClickHandler(p27, "27");
+        addClickHandler(p28, "28");
+        addClickHandler(p29, "29");
+        addClickHandler(p30, "30");
+    }
+
+    private void addClickHandler(StackPane peca, String pecaNum) {
+        peca.setOnMouseClicked(event -> handlePieceClick(pecaNum));
+    }
+
+    private void handlePieceClick(String pieceNumber) {
+        pecaid.setText(pieceNumber);
+        
+        pecaidEstatico.setText(pieceNumber);
     }
 }

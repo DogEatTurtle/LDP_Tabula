@@ -96,14 +96,6 @@ public class Jogador extends Application{
         }
     }
 
-    //metodo para quando acabar o jogo
-    private void jogoTerminado(String text) throws IOException {
-        Platform.runLater(() -> {
-            //FXMLController.escondeAnchorEstatico.setVisible(false);
-            //FXMLController.labelVencedorEstatico.setText(text);
-            //FXMLController.anchorVencedorEstatico.setVisible(true);
-        });
-    }
 
     private void connectClient() throws IOException {
 

@@ -50,7 +50,8 @@ public class Tabula extends Application {
 
     public void displayDados(int d1, int d2, int d3) {
         
-        Media dados = new Media(getClass().getResource("dados.mp3").toExternalForm());
+        //Som ao lançar dados
+        Media dados = new Media(getClass().getResource("lancadados.wav").toExternalForm());
         MediaPlayer dadosAudio = new MediaPlayer(dados);
         dadosAudio.play();
 
@@ -64,11 +65,11 @@ public class Tabula extends Application {
         
         double targetX = 0;
         double targetY = 0;
-        //double offsetX = 0;
-        //double offsetY = 0;
         
-        Media peça = new Media(getClass().getResource("Peca.mp3").toExternalForm());
-        MediaPlayer pecaAudio = new MediaPlayer(peça);
+        
+        //Som ao mover peça
+        Media movePeca = new Media(getClass().getResource("Peca.mp3").toExternalForm());
+        MediaPlayer pecaAudio = new MediaPlayer(movePeca);
         pecaAudio.play();
 
         switch (posicao) {
@@ -1261,8 +1262,9 @@ public class Tabula extends Application {
         this.minhavez = !this.minhavez;
         lancouDados = false;
         
-        Media mudar = new Media(getClass().getResource("mudar.mp3").toExternalForm());
-        MediaPlayer mudarAudio = new MediaPlayer(mudar);
+        //Som ao mudar vez
+        Media mudarVez = new Media(getClass().getResource("terminaronda.wav").toExternalForm());
+        MediaPlayer mudarAudio = new MediaPlayer(mudarVez);
         mudarAudio.play();
         
         Platform.runLater(() -> {
