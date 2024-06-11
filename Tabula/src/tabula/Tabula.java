@@ -6,12 +6,14 @@ package tabula;
 
 import java.io.File;
 import java.io.ObjectOutputStream;
+import java.lang.reflect.Field;
 import java.util.Random;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -1184,6 +1186,17 @@ public class Tabula extends Application {
                 return;
         }
     }
+    
+    /*    public void retiraPeca(String peca) {
+        try {
+            Field field = FXMLController.class.getDeclaredField("p" + peca + "Estatico");
+            field.setAccessible(true);
+            ((Node) field.get(null)).setVisible(false);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            // Handle the case when an invalid position is provided
+            System.out.println("Invalid piece identifier: " + peca);
+        }
+    }*/
 
     public boolean ganhou(){
        return this.ganhou = true;
