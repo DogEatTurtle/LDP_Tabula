@@ -21,7 +21,6 @@ import java.util.logging.Logger;
 public class GameServer {
 
     private ServerSocket ss;
-
     private static int port = 6666, nClientes = 1;
     // lista de jogadores disponíveis
     public static List<ClientHandler> listaClientes = new ArrayList<>();
@@ -32,37 +31,16 @@ public class GameServer {
     private static Socket s;
     static boolean minhavez = true;
 
-    static Casa[] casas = new Casa[24];
-
-    static Casa casa1 = new Casa(1);
-    static Casa casa2 = new Casa(2);
-    static Casa casa3 = new Casa(3);
-    static Casa casa4 = new Casa(4);
-    static Casa casa5 = new Casa(5);
-    static Casa casa6 = new Casa(6);
-    static Casa casa7 = new Casa(7);
-    static Casa casa8 = new Casa(8);
-    static Casa casa9 = new Casa(9);
-    static Casa casa10 = new Casa(10);
-    static Casa casa11 = new Casa(11);
-    static Casa casa12 = new Casa(12);
-    static Casa casa13 = new Casa(13);
-    static Casa casa14 = new Casa(14);
-    static Casa casa15 = new Casa(15);
-    static Casa casa16 = new Casa(16);
-    static Casa casa17 = new Casa(17);
-    static Casa casa18 = new Casa(18);
-    static Casa casa19 = new Casa(19);
-    static Casa casa20 = new Casa(20);
-    static Casa casa21 = new Casa(21);
-    static Casa casa22 = new Casa(22);
-    static Casa casa23 = new Casa(23);
-    static Casa casa24 = new Casa(24);
+    static Casa[] casas = new Casa[24];       
 
     public static void main(String[] args) throws IOException {
         System.out.println("Servidor aceita conexoes (a escuta na porta " + port + ") .");
         ServerSocket ss = new ServerSocket(port);
 
+        for(int i = 0; i < casas.length; i++){
+            casas[i] = new Casa(i + 1);
+        }
+        
         Thread servidor = new Thread(() -> {
 
             while (true) {
@@ -141,129 +119,18 @@ public class GameServer {
         static String recebido;
 
         private void geraPecas(int playerID) {
-            casas[0] = casa1;
-            casas[1] = casa2;
-            casas[2] = casa3;
-            casas[3] = casa4;
-            casas[4] = casa5;
-            casas[5] = casa6;
-            casas[6] = casa7;
-            casas[7] = casa8;
-            casas[8] = casa9;
-            casas[9] = casa10;
-            casas[10] = casa11;
-            casas[11] = casa12;
-            casas[12] = casa13;
-            casas[13] = casa14;
-            casas[14] = casa15;
-            casas[15] = casa16;
-            casas[16] = casa17;
-            casas[17] = casa18;
-            casas[18] = casa19;
-            casas[19] = casa20;
-            casas[20] = casa21;
-            casas[21] = casa22;
-            casas[22] = casa23;
-            casas[23] = casa24;
-            if (playerID == 0) {
-
-                Peca peca1;
-                Peca peca2;
-                Peca peca3;
-                Peca peca4;
-                Peca peca5;
-                Peca peca6;
-                Peca peca7;
-                Peca peca8;
-                Peca peca9;
-                Peca peca10;
-                Peca peca11;
-                Peca peca12;
-                Peca peca13;
-                Peca peca14;
-                Peca peca15;
-                peca1 = new Peca(1);
-                peca2 = new Peca(2);
-                peca3 = new Peca(3);
-                peca4 = new Peca(4);
-                peca5 = new Peca(5);
-                peca6 = new Peca(6);
-                peca7 = new Peca(7);
-                peca8 = new Peca(8);
-                peca9 = new Peca(9);
-                peca10 = new Peca(10);
-                peca11 = new Peca(11);
-                peca12 = new Peca(12);
-                peca13 = new Peca(13);
-                peca14 = new Peca(14);
-                peca15 = new Peca(15);
-
-                pecas.add(peca1);
-                pecas.add(peca2);
-                pecas.add(peca3);
-                pecas.add(peca4);
-                pecas.add(peca5);
-                pecas.add(peca6);
-                pecas.add(peca7);
-                pecas.add(peca8);
-                pecas.add(peca9);
-                pecas.add(peca10);
-                pecas.add(peca11);
-                pecas.add(peca12);
-                pecas.add(peca13);
-                pecas.add(peca14);
-                pecas.add(peca15);
-                System.out.println("PECAS criadas player 1: " + pecas.get(0).id);
-
-            } else if (playerID == 1) {
-
-                Peca peca16;
-                Peca peca17;
-                Peca peca18;
-                Peca peca19;
-                Peca peca20;
-                Peca peca21;
-                Peca peca22;
-                Peca peca23;
-                Peca peca24;
-                Peca peca25;
-                Peca peca26;
-                Peca peca27;
-                Peca peca28;
-                Peca peca29;
-                Peca peca30;
-                peca16 = new Peca(16);
-                peca17 = new Peca(17);
-                peca18 = new Peca(18);
-                peca19 = new Peca(19);
-                peca20 = new Peca(20);
-                peca21 = new Peca(21);
-                peca22 = new Peca(22);
-                peca23 = new Peca(23);
-                peca24 = new Peca(24);
-                peca25 = new Peca(25);
-                peca26 = new Peca(26);
-                peca27 = new Peca(27);
-                peca28 = new Peca(28);
-                peca29 = new Peca(29);
-                peca30 = new Peca(30);
-
-                pecas.add(peca16);
-                pecas.add(peca17);
-                pecas.add(peca18);
-                pecas.add(peca19);
-                pecas.add(peca20);
-                pecas.add(peca21);
-                pecas.add(peca22);
-                pecas.add(peca23);
-                pecas.add(peca24);
-                pecas.add(peca25);
-                pecas.add(peca26);
-                pecas.add(peca27);
-                pecas.add(peca28);
-                pecas.add(peca29);
-                pecas.add(peca30);
-                System.out.println("PECAS criadas player 2: " + pecas.get(0));
+        
+            for (int i = 0; i < casas.length; i++) {
+                casas[i] = new Casa(i + 1);
+            }
+            
+            if (playerID == 0 || playerID == 1) {
+                int startId = playerID == 0 ? 1 : 16;
+                for (int i = startId; i < startId + 15; i++) {
+                    Peca peca = new Peca(i);
+                    pecas.add(peca);
+                }
+                System.out.println("PECAS criadas player " + (playerID + 1) + ": " + pecas.get(0).id);
             }
         }
 
@@ -299,7 +166,7 @@ public class GameServer {
                         recebido = dis.readUTF();
 
                         if (recebido.startsWith("#dados")) {
-                            // #nome-nomeJogador
+                            // #dados-valor1-valor2-valor3
 
                             String[] msgSplit = recebido.split("-");
 
@@ -337,7 +204,6 @@ public class GameServer {
                             String enviar = "";
                             for (ClientHandler client : GameServer.listaClientes) {
                                 if (client.id == player_id_jogada) {
-                                    System.out.println("0");
                                     //verificar se a peca está em jogo
                                     boolean estaEmJogo = false;
                                     boolean existePeca = false;
@@ -380,25 +246,17 @@ public class GameServer {
                                             }
                                         }
                                         if (existePeca) {
-                                            System.out.println("1");
-
                                             for (Casa casa : casas) {
                                                 if (!pecaMovida) {
-
                                                     if (casa.posicao.contains(pecaEscolhida)) {
                                                         estaEmJogo = true;
-                                                        System.out.println("2");
                                                         if (player_id_jogada == 0) {
-                                                            System.out.println("3");
-
-                                                            System.out.println("5");
                                                             if (casa.id + mover > 24) {
                                                                 casa.posicao.remove(pecaEscolhida);
                                                                 client.pecasRetiradas.add(pecaEscolhida);
                                                                 enviar = "#retirarpeca" + "-" + peca + '-' + String.valueOf(mover);
                                                                 pecaMovida = true;
                                                             } else {
-
                                                                 if (!casas[casa.id + mover - 1].posicao.isEmpty()) {
                                                                     for (int i = 0; i < casas[casa.id + mover - 1].posicao.size(); i++) {
                                                                         if (casas[casa.id + mover - 1].posicao.get(i) != null) {
@@ -421,9 +279,6 @@ public class GameServer {
                                                             }
                                                         } else if (player_id_jogada == 1) {
 
-                                                            //mudar
-                                                            System.out.println("5");
-                                                            System.out.println("5");
                                                             if (casa.id + mover > 24) {
                                                                 casa.posicao.remove(pecaEscolhida);
                                                                 client.pecasRetiradas.add(pecaEscolhida);
@@ -460,7 +315,6 @@ public class GameServer {
                                                                         if (casa.id + mover - 1 <= 12) {
                                                                             casas[casa.id + mover - 1].posicao.remove(casas[casa.id + mover - 1].posicao.get(pecaAtacadaIndex));
                                                                             System.out.println("REMOVIDA PECA-" + pecaAtacadaId.id + "do PLAYER " + clientt.id);
-
                                                                             System.out.println("array das atacadas antes de adicionar " + clientt.pecasAtacadas);
 
                                                                             clientt.pecasAtacadas.add(pecaAtacadaId);
@@ -496,7 +350,6 @@ public class GameServer {
                                                             } else {
                                                                 if (casa.id + mover <= 24) {
                                                                     if (casa.id + mover - 1 <= 12) {
-                                                                        System.out.println("7");
 
                                                                         casa.posicao.remove(pecaEscolhida);
                                                                         System.out.println("peça removida da casa" + casa.id);
@@ -505,8 +358,6 @@ public class GameServer {
                                                                         enviar = "#jogada" + "-" + peca + "-" + String.valueOf(mover) + "-" + String.valueOf(casa.id + mover) + '-' + pecaAtacadaId.id + '-' + podeMover2Etapa;
                                                                     } else {
                                                                         if (podeMover2Etapa) {
-                                                                            System.out.println("7");
-
                                                                             casa.posicao.remove(pecaEscolhida);
                                                                             System.out.println("peça removida da casa" + casa.id);
                                                                             casas[casa.id + mover - 1].posicao.add(pecaEscolhida);
@@ -522,8 +373,6 @@ public class GameServer {
                                             }
                                             if (!estaEmJogo) {
                                                 if (player_id_jogada == 0) {
-                                                    System.out.println("3");
-
                                                     System.out.println("fora de jogo - à procura de pecas para atacar");
                                                     System.out.println(casas[mover - 1].posicao.isEmpty());
                                                     if (!casas[mover - 1].posicao.isEmpty()) {
@@ -548,9 +397,6 @@ public class GameServer {
                                                         podeMover = true;
                                                     }
                                                 } else if (player_id_jogada == 1) {
-                                                    //mudar
-                                                    System.out.println("5");
-
                                                     System.out.println("fora de jogo - à procura de pecas para atacar");
                                                     System.out.println(casas[mover - 1].posicao.isEmpty());
                                                     if (!casas[mover - 1].posicao.isEmpty()) {
@@ -599,7 +445,6 @@ public class GameServer {
                                                             }
                                                         }
                                                     } else {
-                                                        System.out.println("8");
                                                         pecaEscolhidaParaMover = pecaEscolhida;
                                                         casas[mover - 1].posicao.add(pecaEscolhida);
                                                         System.out.println(casas[mover - 1].posicao);
@@ -624,15 +469,10 @@ public class GameServer {
 
                                                     pecaAtacadaParaMover = pecaAttacked;
                                                     System.out.println("removida do array das atacadas");
-                                                    if (player_id_jogada == 0) {
-                                                        System.out.println("3");
-
-                                                        System.out.println("tou aqui bro");
+                                                    if (player_id_jogada == 0) {                                                       
                                                         System.out.println(casas[mover - 1].posicao.isEmpty());
                                                         if (!casas[mover - 1].posicao.isEmpty()) {
-                                                            for (int i = 0; i < casas[mover - 1].posicao.size(); i++) {
-                                                                System.out.println("estou aqui");
-                                                                
+                                                            for (int i = 0; i < casas[mover - 1].posicao.size(); i++) {                                                                                                             
                                                                 if (casas[mover - 1].posicao.get(i) != null) {
                                                                     if (casas[mover - 1].posicao.get(i).id > 15) {
                                                                         pecaAtacadaId = casas[mover - 1].posicao.get(i);
@@ -696,8 +536,7 @@ public class GameServer {
                                                                     pecaMovida = true;
                                                                 }
                                                             }
-                                                        } else {
-                                                            System.out.println("8");
+                                                        } else {                                                           
                                                             casas[mover - 1].posicao.add(pecaAttacked);
                                                             System.out.println("movida peca atacada para posicao  " + casas[mover - 1]);
                                                             System.out.println(casas[mover - 1].posicao);
