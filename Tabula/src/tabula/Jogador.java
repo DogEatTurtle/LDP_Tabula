@@ -4,28 +4,23 @@
  */
 package tabula;
 
-import java.awt.Container;
-import java.awt.GridLayout;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
-import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
+
 
 /**
  *
@@ -72,7 +67,7 @@ public class Jogador extends Application{
         public ClientSideConnection() {
             System.out.println("---Client---");
             try {
-                socket = new Socket("localhost", 51734);
+                socket = new Socket("localhost", 5555);
                 dataIn = new DataInputStream(socket.getInputStream());
                 dataOut = new DataOutputStream(socket.getOutputStream());
                 playerID = dataIn.readInt();
@@ -156,15 +151,12 @@ public class Jogador extends Application{
                 public void handle(MouseEvent event) {
 
                     try {
-
                         out.writeUTF("#vez"); 
-                        System.out.println("qwedfrtyukil");
+                        System.out.println("batata");
                     } catch (IOException ex) {
                         Logger.getLogger(Jogador.class.getName()).log(Level.SEVERE, null, ex);
                     }
-
                 }
-
             });
 
             FXMLController.jogarEstatico.setOnMousePressed(new EventHandler<MouseEvent>() {
@@ -202,11 +194,8 @@ public class Jogador extends Application{
                     } catch (IOException ex) {
                         Logger.getLogger(Jogador.class.getName()).log(Level.SEVERE, null, ex);
                     }
-
                 }
-
             });
-
         });
 
         Thread lerMensagem;
@@ -236,7 +225,7 @@ public class Jogador extends Application{
                         String[] msgSplit = msg.split("-");
                         boolean vez = Boolean.parseBoolean(msgSplit[1]);
                         jogoInstancia.iniciaJogo(vez);
-                        System.out.println("fsadfsdf: " + msg);
+                        System.out.println("batata: " + msg);
 
                     } else if (msg.startsWith("#jogada")) {
                         String[] msgSplit = msg.split("-");
@@ -388,12 +377,10 @@ public class Jogador extends Application{
                     }
 
                 } catch (IOException e) {
-
-                }
             }
-        });
-        lerMensagem.start();
-        enviarMensagem.start();
-
+        }
+    });
+    lerMensagem.start();
+    enviarMensagem.start();
     }
 }
