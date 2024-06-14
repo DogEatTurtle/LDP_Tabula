@@ -67,7 +67,7 @@ public class Jogador extends Application{
         public ClientSideConnection() {
             System.out.println("---Client---");
             try {
-                socket = new Socket("localhost", 5555);
+                socket = new Socket("localhost", 6666);
                 dataIn = new DataInputStream(socket.getInputStream());
                 dataOut = new DataOutputStream(socket.getOutputStream());
                 playerID = dataIn.readInt();
